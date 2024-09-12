@@ -1,0 +1,65 @@
+.html{
+  font-size: 16px;  /*hor helping inrem value*/
+}
+
+.container{
+  display: flex; /* Flexbox to align sections side by side */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width VVIMP TO SET UP*/
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* Static Left Section */
+div.static {
+  width: 37%; /* Corresponds to the Bootstrap 'col-3' width */
+  padding: 20px;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent scrolling on the left side */
+  /*z-index: 1000; /* Ensure it stays above the right section */
+  box-sizing: border-box;
+  border-right: 1px solid #7f0b0c;  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position:fixed;
+  /* if we put fixed here, we have to put margin-left in scrollable side, if we dont put position altogether, the left side wobbles */
+}
+.static-main-text{
+  margin:20% 10% 10% 10%;  /* top-right-bottom-left, like clockhands  */
+  line-height: 0.815rem;
+}
+
+.static-main-intro{
+  margin: 10%;
+  font-size: 1.5rem;
+}
+
+.static-main-links{
+  margin:10%;
+  font-size: 1.5rem;
+}
+
+.static-main-links a {
+  text-decoration: none; /*removes the underlines*/
+  cursor: pointer;
+  /* color: ; */
+}
+
+
+
+
+/* Scrollable Right Section */
+.scrollable {
+  margin-left:37%;
+  /* we dont need a margin-left, as it sets the beginning of the content of the scrollable side to a margin in the desired value*/
+  width: 63%;
+}
+
+.social-links a{  /*important to put a in front */
+  text-decoration: none; /*removes the underlines*/
+  cursor: pointer;
+  /* color: ; */
+}
